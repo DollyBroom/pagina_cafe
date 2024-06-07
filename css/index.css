@@ -1,0 +1,90 @@
+body{
+    background-color: blanchedalmond;
+    color: #3e2118;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    width: 60%;
+
+}
+h1{
+    color: #3e2118;
+    background-color: rgb(243, 215, 180);
+    font-size: xxx-large;
+    text-align: center;
+    border-radius: 15px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px auto;
+
+}
+h2{
+    text-align: center;
+    width: 50%;
+    color: #ffffff;
+    background-color: #3e2118;
+    padding: 10px;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin: auto;
+}
+p{
+    background-color: #f3d7b4;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 22px;
+}
+
+h4{
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style-type: none;
+    margin: 0px;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cafe_imagen{
+    width: 40%;
+    box-sizing: border-box;
+    border: 5px solid #3e2118;
+    border-radius: 15px;
+    min-width: 40%;
+    
+}
+.navegacion{
+    position:fixed;
+    top: 0%;
+    right:20%;
+    background-color: #3e2118;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.redes{
+    background-color: #f3d7b4;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin: 0px;
+    margin-top: 20px;
+}
