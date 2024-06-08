@@ -5,14 +5,14 @@ body{
     font-weight: 400;
     font-style: normal;
     margin: 0 auto;
-    width: 60%;
+    max-width: 60%;
 
 }
 h1{
     color: #3e2118;
-    background-color: rgb(243, 215, 180);
     font-size: xxx-large;
     text-align: center;
+    background-color: rgb(243, 215, 180);
     border-radius: 15px;
     width: fit-content;
     padding-left: 20px;
@@ -25,23 +25,38 @@ h2{
     width: 50%;
     color: #ffffff;
     background-color: #3e2118;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 15px;
     letter-spacing: 2px;
-    margin: auto;
+
+}
+h3{
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    background-color: #3e2118;
+    padding: 10px;
+    border-radius: 15px;
+    letter-spacing: 2px;
 }
 p{
     background-color: #f3d7b4;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 15px;
     padding: 20px;
     font-size: 22px;
 }
 
 h4{
+    text-align: center;
+
+}
+h5{
+    font-size: medium;
     padding: 0px;
-    margin: 0px;
+    margin: 0px;  
 }
 ul{
     padding: 0px;
@@ -56,19 +71,75 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
-
+img{
+    max-width: 100%;
+    border-radius: 15px;
+}
 .contenedor{
     display: flex;
     justify-content: space-around;
 }
+@media(max-width: 768px){
+    .contenedor{
+        max-width: 500px;
+        flex-direction: column;
+    }
+    .cafe_imagen{
+        width: 400px;
+        margin: auto;
+    }
+    .cafes{
+        align-items: center;
+    }
+}
+.cafes{
+    align-items: start;
+}
+.fondo{
+    background-color: #f3d7b4;
+    border-radius: 15px;
+}
 
 .cafe_imagen{
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
     border: 5px solid #3e2118;
     border-radius: 15px;
-    min-width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
+}
+
+.item_menu{
+    padding: 5px;
+    padding-left: 30px;
+    font-size: 22px;
+}
+.menu{
+    background-color: rgb(243, 215, 180);
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 600;
+}
+.icono{
+    width: 20px;
+}
+.lista_contacto{
+    padding: 10px;
+    background-color: #f3d7b4;
+    border-radius: 15px;
+}
+.item_contacto{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+
+}
+.mapa{
+    border: 5px solid #3e2118;
+    border-radius: 15px;
+    width: 100%;
 }
 .navegacion{
     position:fixed;
