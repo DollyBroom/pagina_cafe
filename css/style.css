@@ -147,19 +147,6 @@ img{
     border-radius: 15px;
     width: 100%;
 }
-.navegacion{
-    position:fixed;
-    top: 0%;
-    right:20%;
-    background-color: #3e2118;
-    padding: 10px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.navegacion li{
-    display: inline;
-    padding: 5px;
-}
 .redes{
     background-color: #f3d7b4;
     border-top-left-radius: 15px;
@@ -169,6 +156,7 @@ img{
     margin: 0px;
     margin-top: 20px;
 }
+
 @media(max-width: 768px){
     .contenedor{
         flex-direction: column;
