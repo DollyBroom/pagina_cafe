@@ -2,10 +2,11 @@ body{
     background-color: blanchedalmond;
     color: #3e2118;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     margin: 0 auto;
-    max-width: 60%;
+    width: 60%;
+    line-height: normal;
 
 }
 h1{
@@ -14,15 +15,16 @@ h1{
     text-align: center;
     background-color: rgb(243, 215, 180);
     border-radius: 15px;
-    width: fit-content;
     padding-left: 20px;
     padding-right: 20px;
     margin: 30px auto;
+    width: fit-content;
 
 }
 h2{
     text-align: center;
-    width: 50%;
+    width: 100%;
+    box-sizing: border-box;
     color: #ffffff;
     background-color: #3e2118;
     margin-top: 20px;
@@ -30,6 +32,7 @@ h2{
     padding: 10px;
     border-radius: 15px;
     letter-spacing: 2px;
+
 
 }
 h3{
@@ -39,6 +42,7 @@ h3{
     padding: 10px;
     border-radius: 15px;
     letter-spacing: 2px;
+    margin: 5px;
 }
 p{
     background-color: #f3d7b4;
@@ -46,12 +50,12 @@ p{
     margin-bottom: 20px;
     border-radius: 15px;
     padding: 20px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 h4{
     text-align: center;
-
+    margin-top: 10px;
 }
 h5{
     font-size: medium;
@@ -69,35 +73,33 @@ li{
 }
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 img{
+    box-sizing: border-box;
     max-width: 100%;
+    width: auto;
     border-radius: 15px;
+}
+
+.logo{
+    width: 80px;
 }
 .contenedor{
     display: flex;
     justify-content: space-around;
 }
-@media(max-width: 768px){
-    .contenedor{
-        max-width: 500px;
-        flex-direction: column;
-    }
-    .cafe_imagen{
-        width: 400px;
-        margin: auto;
-    }
-    .cafes{
-        align-items: center;
-    }
-}
+
 .cafes{
     align-items: start;
+}
+.cafes img{
+    margin: 5px;
 }
 .fondo{
     background-color: #f3d7b4;
     border-radius: 15px;
+    align-items: center;
 }
 
 .cafe_imagen{
@@ -105,21 +107,24 @@ img{
     box-sizing: border-box;
     border: 5px solid #3e2118;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin: 10px; 
+}
+.marron{
+    background-color: #3e2118;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-.item_menu{
+.menu li{
     padding: 5px;
-    padding-left: 30px;
-    font-size: 22px;
+    font-size: 18px;
 }
 .menu{
     background-color: rgb(243, 215, 180);
     border-radius: 15px;
     padding: 20px;
     font-weight: 600;
+    margin: 5px;
 }
 .icono{
     width: 20px;
@@ -128,8 +133,9 @@ img{
     padding: 10px;
     background-color: #f3d7b4;
     border-radius: 15px;
+    margin: 5px;
 }
-.item_contacto{
+.lista_contacto li{
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -150,6 +156,10 @@ img{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+.navegacion li{
+    display: inline;
+    padding: 5px;
+}
 .redes{
     background-color: #f3d7b4;
     border-top-left-radius: 15px;
@@ -158,4 +168,20 @@ img{
     padding-bottom: 5px;
     margin: 0px;
     margin-top: 20px;
+}
+@media(max-width: 768px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .cafe_imagen{
+        width: 80%;
+        margin: 10px;
+    }
+    .cafes{
+        align-items: center;
+    
+    }
+    body{
+        width: 80%;
+    }
 }
